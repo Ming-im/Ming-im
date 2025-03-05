@@ -1,0 +1,98 @@
+/* 基础样式 */
+body {
+    font-family: 'Segoe UI', system-ui;
+    margin: 0;
+    padding: 20px;
+    background: #f8f9fa;
+    color: #2d3436;
+}
+
+.nav-header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.nav-header h1 {
+    font-size: 2.5rem;
+    color: #2d3436;
+    margin-bottom: 15px;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 12px 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 30px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #74b9ff;
+    box-shadow: 0 0 8px rgba(116, 185, 255, 0.2);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.link-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.link-title {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    color: #2d3436;
+}
+
+.link-url {
+    display: block;
+    color: #74b9ff;
+    text-decoration: none;
+    margin-bottom: 12px;
+    word-break: break-all;
+}
+
+.category-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #dfe6e9;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    
+    .nav-header h1 {
+        font-size: 2rem;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "links": [
+        {
+            "title": "GitHub",
+            "url": "https://github.com",
+            "description": "代码托管平台",
+            "categories": ["开发", "编程"]
+        },
+        {
+            "title": "MDN Web Docs",
+            "url": "https://developer.mozilla.org",
+            "description": "Web开发文档",
+            "categories": ["文档", "前端"]
+        },
+        {
+            "title": "Stack Overflow",
+            "url": "https://stackoverflow.com",
+            "description": "编程问答社区",
+            "categories": ["开发", "问答"]
+        }
+    ]
+}
